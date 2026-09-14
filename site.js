@@ -62,7 +62,23 @@
       }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
     }
     for (var j = 0; j < nodes.length; j++) io.observe(nodes[j]);
+    nearby();
+    clearTimeout(failsafe);
+    failsafe = setTimeout(showAll, 2500);
   }
+  function showAll() {
+    var n = d.querySelectorAll('[data-reveal]:not([data-shown])');
+    for (var i = 0; i < n.length; i++) n[i].setAttribute('data-shown', '');
+  }
+  function nearby() {
+    var n = d.querySelectorAll('[data-reveal]:not([data-shown])');
+    var vh = window.innerHeight || 800;
+    for (var i = 0; i < n.length; i++) {
+      var r = n[i].getBoundingClientRect();
+      if (r.top < vh * 1.2 && r.bottom > -vh * 0.2) n[i].setAttribute('data-shown', '');
+    }
+  }
+  var failsafe;
   var timer;
   function schedule() { clearTimeout(timer); timer = setTimeout(scan, 60); }
   if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', schedule);
