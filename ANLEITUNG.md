@@ -46,7 +46,7 @@ oder oben auf der Pages-Einstellungsseite sichtbar (grüner Haken).
 
 ## 7. Prüfen
 https://lorenzodeiana1.github.io/Piato-Pflegeruf-/ öffnen und durchklicken:
-Start, Pflegeruf, Einsatzbereiche, About PIATO, Contact, Impressum, Datenschutz.
+Start, Pflegeruf, Einsatzbereiche, About PIATO, Impressum, Datenschutz.
 
 Falls die Seite noch den alten Stand zeigt: Browser-Cache leeren bzw.
 mit `Cmd/Strg + Shift + R` neu laden.

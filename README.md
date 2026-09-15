@@ -9,7 +9,6 @@ index.html            Start
 pflegeruf.html        Pflegeruf
 einsatzbereiche.html  Einsatzbereiche
 about.html            About PIATO
-contact.html          Contact
 impressum.html        Impressum
 datenschutz.html      Datenschutz
 404.html              Fallback-Seite
