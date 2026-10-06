@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/vendor/react-dom.production.min.js"};</script>
 <script src="./support.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="PIATO Health">
+<meta property="og:title" content="Digitaler Pflegeruf – Ablauf, Funktionen und Wirkung | PIATO Pflegeruf">
+<meta property="og:description" content="Der digitale Pflegeruf von PIATO: Patientenruf per App, Anliegen strukturiert erfassen, priorisiert weitergeben und nachvollziehbar abschließen – mit mobiler Kommunikation und Dokumentation für das Pflegeteam.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://piatohealth.de/pflegeruf.html">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#007C96">
+<meta property="og:url" content="https://piatohealth.de/pflegeruf.html">
+<meta property="og:image" content="https://piatohealth.de/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 </head>
 <body>
 <x-dc>
 <helmet>
-<title>Pflegeruf neu gedacht – digitaler Pflegeruf von PIATO</title>
-<meta name="description" content="Der digitale Pflegeruf von PIATO: Anliegen strukturiert erfassen, priorisiert weitergeben und nachvollziehbar abschließen – mit mobiler Kommunikation für das Pflegeteam.">
+<title>Digitaler Pflegeruf – Ablauf, Funktionen und Wirkung | PIATO Pflegeruf</title>
+<meta name="description" content="Der digitale Pflegeruf von PIATO: Patientenruf per App, Anliegen strukturiert erfassen, priorisiert weitergeben und nachvollziehbar abschließen – mit mobiler Kommunikation und Dokumentation für das Pflegeteam.">
 <meta name="robots" content="index,follow">
 <script src="site.js"></script>
 <style>
@@ -39,7 +54,9 @@
     main>section>div{padding:64px 20px!important}
     [data-pad]{padding:44px 24px!important}
     [data-img],[data-imgframe]{aspect-ratio:3/2}
-    [data-cycle]{grid-template-columns:1fr!important;gap:20px!important}
+    [data-cycle]{grid-template-columns:minmax(0,1fr)!important;gap:20px!important}
+    [data-cycle] article{min-width:0;padding:26px 22px!important}
+    [data-cycle] h3{overflow-wrap:anywhere;hyphens:auto}
   }
   @media(max-width:1024px){
     [data-heroimg]{border-radius:0!important;height:auto!important;aspect-ratio:16/10!important}
@@ -71,20 +88,20 @@
   <section data-screen-label="Seiten-Hero" data-hero style="position:relative;z-index:1;background:linear-gradient(180deg,#F4F8F9 0%,#FFFFFF 78%)">
     <div style="max-width:1240px;margin:0 auto;padding:34px 32px 0">
       <nav aria-label="Breadcrumb" style="display:flex;align-items:center;gap:10px;font-size:14px;color:#8FA3A9">
-        <a href="./index.html" style="color:#8FA3A9" style-hover="color:#007C96">Start</a>
+        <a href="./index.html" style="color:#8FA3A9;display:inline-block;padding:13px 6px;margin:-13px -6px" style-hover="color:#007C96">Start</a>
         <span aria-hidden="true">/</span>
         <span style="color:#007C96;font-weight:600">Pflegeruf</span>
       </nav>
     </div>
-    <div data-split style="display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:center">
-      <div data-reveal data-herocopy style="justify-self:end;width:100%;max-width:620px;padding:56px 60px 96px 32px">
+    <div data-split style="display:grid;grid-template-columns:1.1fr 1fr;gap:0;align-items:center">
+      <div data-reveal data-herocopy style="justify-self:end;width:100%;max-width:680px;padding:56px 64px 72px 32px">
         <span style="display:inline-block;background:#F0F5F6;color:#007C96;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:11px 22px;border-radius:999px">PIATO Pflegeruf</span>
-        <h1 style="margin:28px 0 0;font-size:clamp(36px,5.2vw,64px);line-height:1.06;letter-spacing:-.025em;font-weight:800;color:#007C96;text-wrap:balance"><span style="display:block">Pflegeruf</span><span style="display:block;color:#007C96">neu gedacht.</span></h1>
-        <p style="margin:28px 0 0;font-size:clamp(17px,1.5vw,19px);line-height:1.65;color:#5B6A70;max-width:520px;text-wrap:pretty">PIATO Pflegeruf ermöglicht eine strukturierte Kommunikation zwischen Patient:innen und Pflegekräften. Effizient, transparent und menschlich.</p>
+        <h1 style="margin:28px 0 0;font-size:clamp(40px,5.8vw,80px);line-height:1.06;letter-spacing:-.025em;font-weight:800;color:#007C96;text-wrap:balance"><span style="display:block">Pflegeruf</span><span style="display:block;color:#007C96">neu gedacht.</span></h1>
+        <p style="margin:32px 0 0;font-size:clamp(18px,1.7vw,22px);line-height:1.6;color:#5B6A70;max-width:560px;text-wrap:pretty">PIATO Pflegeruf ermöglicht eine strukturierte Kommunikation zwischen Patient:innen und Pflegekräften. Effizient, transparent und menschlich.</p>
       </div>
       <figure data-reveal data-reveal-delay="120" data-herofig style="margin:0;position:relative">
-        <div data-img data-heroimg style="height:680px;border-radius:32px 0 0 32px;overflow:hidden;background:#F0F5F6;box-shadow:0 54px 100px -50px rgba(0,60,75,.5)">
-          <img src="assets/pflegeruf-app.png" alt="Smartphone mit der PIATO-Pflegeruf-App: Kacheln für Toilette, Schmerz, Durst, Infusion und Sonstiges" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block">
+        <div data-img data-heroimg style="height:clamp(420px,42vw,580px);border-radius:32px 0 0 32px;overflow:hidden;background:#F0F5F6;box-shadow:0 54px 100px -50px rgba(0,60,75,.5)">
+          <img src="assets/pflegeruf-app.webp" alt="Smartphone mit der PIATO-Pflegeruf-App: Kacheln für Toilette, Schmerz, Durst, Infusion und Sonstiges" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block">
         </div>
       </figure>
     </div>

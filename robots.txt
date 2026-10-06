@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://piatohealth.de/sitemap.xml
